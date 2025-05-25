@@ -11,11 +11,15 @@ export default function Home() {
   };
 
   const generateQRCode = async () => {
+    if (!inputText || inputText.trim() === "") {
+      console.log("Cannot generate QR code: inputText is empty.");
+      return;
+    }
     try {
       const dataUrl = await QRCode.toDataURL(inputText);
       setQrCodeDataUrl(dataUrl);
     } catch (error) {
-      console.error("Error generating QR code", error);
+      console.log("Error generating QR code", error);
     }
   };
 
