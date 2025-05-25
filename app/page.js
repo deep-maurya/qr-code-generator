@@ -79,7 +79,7 @@ export default function Home() {
       
 
       <footer className="mt-auto footer footer-center p-4 text-sm text-base-content/70">
-        <p>© {new Date().getFullYear()} QR Studio — Built with DaisyUI & Framer Motion</p>
+        <p>© {new Date().getFullYear()} deep-maurya</p>
       </footer>
     </div>
   );
